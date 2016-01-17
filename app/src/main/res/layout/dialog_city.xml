@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+    <TextView
+        style="@style/mTextViewMedium1"
+        android:text="1.《近期影讯》频道会返回所在城市的影视信息，默认为北京。"/>
+
+    <View style="@style/mLine1"/>
+
+    <TextView
+        style="@style/mTextViewMedium1"
+        android:layout_marginTop="5dp"
+        android:text="2.设置完如果发现《近期影讯》无数据显示，请检查或更换城市名称。"/>
+
+    <View style="@style/mLine1"/>
+
+    <TextView
+        style="@style/mTextViewMedium1"
+        android:layout_marginTop="5dp"
+        android:text="3.不设置也可以，大部分电影都是全国同步上映，只有极少数是地区上映。"/>
+
+    <View style="@style/mLine1"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/et_dialog_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入所在的城市的全称"/>
+
+        <Button
+            android:id="@+id/btn_dialog_city"
+            style="@style/mButtonEdge1"
+            android:layout_marginTop="10dp"
+            android:text="确定"/>
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

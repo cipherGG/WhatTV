@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    style="@style/mCoordinator1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.gg.whattv.activity.TVProgramActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/ab_activity_foot_team"
+        style="@style/mAppBar1"
+        android:layout_height="180dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/ctl_activity_foot_team"
+            style="@style/mCollapsing1"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/iv_activity_foot_team_top"
+                style="@style/mImageCrop1"
+                android:src="@mipmap/tool_bar_foot"
+                app:layout_collapseMode="parallax"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tb_activity_foot_team"
+                style="@style/mToolBar1"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_activity_foot_team"
+        style="@style/mMM"
+        android:paddingTop="4dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

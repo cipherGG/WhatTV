@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tv"
+            android:icon="@drawable/ic_menu_send"
+            android:title="电视节目"/>
+        <item
+            android:id="@+id/nav_basket"
+            android:icon="@drawable/ic_menu_send"
+            android:title="NBA赛事"/>
+        <item
+            android:id="@+id/nav_foot"
+            android:icon="@drawable/ic_menu_send"
+            android:title="足球联赛"/>
+        <item
+            android:id="@+id/nav_movie"
+            android:icon="@drawable/ic_menu_send"
+            android:title="近期影讯"/>
+    </group>
+
+    <item android:title="更多">
+        <menu>
+            <item
+                android:id="@+id/nav_theme"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="换肤"/>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="城市"/>
+        </menu>
+    </item>
+
+</menu>

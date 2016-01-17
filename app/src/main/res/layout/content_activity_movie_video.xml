@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.gg.whattv.ScrollingActivity"
+    tools:showIn="@layout/activity_movie_video">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_activity_movie_video_title"
+            style="@style/mTextViewLarge1"
+            android:layout_gravity="center_horizontal"
+            android:text="name"/>
+
+        <View style="@style/mLine1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/mTextViewMedium1"
+                android:text="类型："
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/tv_activity_movie_video_tag"
+                style="@style/mTextViewMedium1"
+                android:text="tag"
+                android:textStyle="normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/mTextViewMedium1"
+                android:text="演员："
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/tv_activity_movie_video_act"
+                style="@style/mTextViewMedium1"
+                android:text="act"
+                android:textStyle="normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/mTextViewMedium1"
+                android:text="评分："
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/tv_activity_movie_video_rating"
+                style="@style/mTextViewMedium1"
+                android:text="rating"
+                android:textStyle="normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/mTextViewMedium1"
+                android:text="地区："
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/tv_activity_movie_video_area"
+                style="@style/mTextViewMedium1"
+                android:text="area"
+                android:textStyle="normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/mTextViewMedium1"
+                android:text="导演："
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/tv_activity_movie_video_dir"
+                style="@style/mTextViewMedium1"
+                android:text="dir"
+                android:textStyle="normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/mTextViewMedium1"
+                android:text="剧情："
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/tv_activity_movie_video_desc"
+                style="@style/mTextViewMedium1"
+                android:text="desc"
+                android:textStyle="normal"/>
+        </LinearLayout>
+
+        <View style="@style/mLine1"/>
+
+        <TextView
+            style="@style/mTextViewMedium1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="猜你喜欢"/>
+
+        <!-- 这里也是会滚动的. 注意这里的高度不能太高，
+        否则开始的时候会把内容顶到imageView后面-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_activity_movie_video_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="222dp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+

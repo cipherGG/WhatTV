@@ -1,0 +1,95 @@
+<resources>
+
+    <!-- AppBarLayout-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="mMM">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="mMW">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="mWW">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="mWM">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="mCoordinator1" parent="mMM">
+        <!-- 以下会导致开启时tool bar被status bar遮挡-->
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <item name="android:layout_gravity">bottom|end</item>
+    </style>
+
+    <style name="mAppBar1" parent="mMW">
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <item name="android:theme">@style/AppTheme.AppBarOverlay</item>
+    </style>
+
+    <style name="mCollapsing1" parent="mMM">
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+    </style>
+
+    <style name="mToolBar1" parent="mMM">
+        <item name="android:layout_height">?attr/actionBarSize</item>
+    </style>
+
+    <style name="mLine1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.3dp</item>
+        <item name="android:background">#9000</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="mLine2">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#000</item>
+    </style>
+
+    <style name="mCardView1" parent="mMW">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <!-- 点击效果(setClickListener还会有声音)-->
+        <item name="android:clickable">true</item>
+        <!-- 不一样的点击效果 background也行-->
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="mTextViewLarge1" parent="mWW">
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="mTextViewMedium1" parent="mWW">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="mTextViewSmall1" parent="mWW">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="mImageCrop1" parent="mMM">
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="mButtonEdge1" parent="mMW">
+        <item name="android:background">@drawable/btn_selector_edge</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+</resources>
